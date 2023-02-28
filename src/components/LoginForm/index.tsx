@@ -21,14 +21,12 @@ import styles from "./LoginForm.module.scss";
 
 interface LoginFormProps {
   onClose: () => void;
-  // visible: boolean;
   onOpenRegister: () => void;
   formType: string;
 }
 
 export const LoginForm: React.FC<LoginFormProps> = ({
   onClose,
-  // visible,
   onOpenRegister,
   formType,
 }) => {

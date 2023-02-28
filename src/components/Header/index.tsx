@@ -16,9 +16,6 @@ export const Header: React.FC = () => {
   const [isServersVisible, setIsServersVisible] = React.useState(false);
   const [isHelpListVisible, setIsHelpListVisible] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isLoginFormVisible, setIsLoginFormVisible] = React.useState(false);
-  const [isRegisterFormVisible, setIsRegisterFormVisible] =
-    React.useState(false);
   const [formType, setFormType] = React.useState<"login" | "register" | "">("");
 
   const helpListRoutes = ["/rules", "/download", "/faq", "/commands"];
@@ -480,7 +477,6 @@ export const Header: React.FC = () => {
       )}
       {formType === "register" && (
         <RegisterForm
-          onOpenRegister={() => setFormType("register")}
           onOpenLogin={() => setFormType("login")}
           formType={formType}
           onClose={() => setFormType("")}

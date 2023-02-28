@@ -21,16 +21,12 @@ import styles from "./RegisterForm.module.scss";
 
 interface RegisterFormProps {
   onClose: () => void;
-  // visible: boolean;
-  onOpenRegister: () => void;
   onOpenLogin: () => void;
   formType: string;
 }
 
 export const RegisterForm: React.FC<RegisterFormProps> = ({
   onClose,
-  // visible,
-  onOpenRegister,
   onOpenLogin,
   formType,
 }) => {
