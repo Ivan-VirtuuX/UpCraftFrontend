@@ -60,8 +60,6 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({
       if (err.response) {
         setErrorMessage(err.response.data.message);
       }
-    } finally {
-      onClose();
     }
   };
 

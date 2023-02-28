@@ -37,7 +37,6 @@ export const LoginForm: React.FC<LoginFormProps> = ({
   const matches850 = useMediaQuery("(max-width:850px)");
   const matches600 = useMediaQuery("(max-width:600px)");
   const matches500 = useMediaQuery("(max-width:500px)");
-  const matches400 = useMediaQuery("(max-width:400px)");
 
   const form = useForm({
     mode: "onChange",
@@ -63,8 +62,6 @@ export const LoginForm: React.FC<LoginFormProps> = ({
       if (err.response) {
         setErrorMessage(err.response.data.message);
       }
-    } finally {
-      onClose();
     }
   };
 
