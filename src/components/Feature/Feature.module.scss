@@ -1,0 +1,42 @@
+.featureTextBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.featureTitle {
+    font-size: 32px;
+    color: #7D97F3;
+    font-weight: 800;
+
+    @media (max-width: 400px) {
+        font-size: 2rem;
+    }
+}
+
+.featureText {
+    color: #505050;
+    font-weight: 700;
+    font-size: 30px;
+    width: 330px;
+    margin-top: 10px;
+
+    @media (max-width: 400px) {
+        font-size: 1.5rem;
+        width: calc(100% - 30px);
+    }
+}
+
+.featureBlock {
+    img {
+        margin-bottom: 40px;
+
+        @media (max-width: 400px) {
+            width: calc(100% - 60px);
+            height: auto;
+        }
+    }
+
+    @media (max-width: 400px) {
+        width: 300px;
+    }
+}

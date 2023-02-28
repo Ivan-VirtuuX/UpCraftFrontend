@@ -1,0 +1,18 @@
+.ruleItemText {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #505050;
+
+    @media (max-width: 750px) {
+        font-size: 2rem;
+    }
+}
+
+.line {
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}

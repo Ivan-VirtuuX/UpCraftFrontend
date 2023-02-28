@@ -1,0 +1,100 @@
+.menuPopupContainer {
+    width: 500px;
+    overflow: hidden !important;
+}
+
+.menuPopupInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 0 !important;
+
+    @media (max-width: 570px) {
+        flex-direction: column;
+    }
+}
+
+.menuPopup {
+    div {
+        @media (max-width: 570px) {
+            overflow: hidden !important;
+        }
+    }
+}
+
+.serversList {
+    @media (max-width: 570px) {
+        margin-bottom: 20px;
+    }
+}
+
+.serversListItem {
+    transition: all 0.3s ease-in-out;
+
+    li {
+        transition: all 0.3s ease-in-out;
+
+        a {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    h4 {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 22px;
+        color: #7D97F3;
+    }
+
+    li {
+        margin-top: 10px;
+
+        a {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            color: #505050;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        &:hover {
+            transform: translateX(10px);
+
+            a {
+                color: #7D97F3;
+            }
+        }
+    }
+}
+
+.serversListFirstItem {
+    margin-bottom: 10px;
+}
+
+.helpList {
+    h4 {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 22px;
+        color: #7D97F3;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            color: #505050;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: #7D97F3;
+            }
+        }
+    }
+}

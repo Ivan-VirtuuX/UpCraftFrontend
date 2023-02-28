@@ -1,0 +1,17 @@
+.formField {
+    width: 481px !important;
+    height: 71px !important;
+    border-radius: 10px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px !important;
+    }
+
+    div {
+        input {
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+    }
+}

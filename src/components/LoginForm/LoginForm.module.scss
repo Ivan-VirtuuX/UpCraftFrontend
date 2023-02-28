@@ -1,0 +1,135 @@
+.formContainer {
+    z-index: 1000;
+    height: 600px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden !important;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 850px) {
+        width: calc(100% - 50px);
+    }
+
+    @media (max-width: 800px) {
+        height: 550px;
+    }
+
+    @media (max-width: 500px) {
+        height: 450px;
+    }
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    div:not(:nth-child(1)) {
+        @media (max-width: 850px) {
+            width: 100% !important;
+
+            label {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 400px) {
+            width: 240px !important;
+        }
+    }
+}
+
+.formType {
+    font-weight: 800;
+    font-size: 60.8379px;
+    line-height: 83px;
+    color: #7D97F3;
+    margin-bottom: 50px;
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 2.5rem;
+        margin: 0 auto;
+        margin-bottom: 0 !important;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 2.2rem;
+        margin: 0 auto;
+    }
+}
+
+.formActions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    button:nth-child(1) {
+        font-size: 25px;
+        font-weight: bold;
+        color: #7D97F3;
+
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 15px;
+        }
+    }
+
+    button:nth-child(2) {
+        padding: 22px 32px;
+        background: #7D97F3;
+        border-radius: 10px;
+        width: 188px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: #6183fd;
+        }
+
+        &:disabled {
+            background-color: #D4D4D4 !important;
+
+            span {
+                color: #929292 !important;
+                font-weight: 700;
+            }
+        }
+
+        span {
+            font-weight: 900;
+            font-size: 33.7544px;
+            line-height: 46px;
+            color: #FFFFFF;
+
+        }
+
+        @media (max-width: 850px) {
+            padding: 12px 22px;
+            width: 150px;
+
+            span {
+                font-size: 1.7rem !important;
+            }
+        }
+
+        @media (max-width: 450px) {
+            width: 120px;
+            padding: 10px 17px;
+
+           span {
+               font-size: 1.5rem !important;
+           }
+        }
+    }
+}

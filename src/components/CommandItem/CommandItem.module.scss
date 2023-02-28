@@ -1,0 +1,18 @@
+.commandItemTextBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.commandItemTitle {
+    font-weight: 800;
+    font-size: 35px;
+    color: #7D97F3;
+}
+
+.commandItemText {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #505050;
+    margin-top: 10px;
+}

@@ -1,0 +1,149 @@
+.dialogContainer {
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 650px) {
+        height: 550px;
+    }
+
+    @media (max-width: 520px) {
+        height: 500px;
+    }
+
+    @media (max-width: 420px) {
+        height: 450px;
+    }
+}
+
+.buyDonate {
+    background: #7D97F3;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 47px;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+    width: 448px;
+    margin-top: 40px;
+
+    &Title {
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 57px;
+        color: #7D97F3;
+        margin-bottom: 30px;
+
+        @media(max-width: 650px) {
+            font-size: 2.3rem;
+        }
+
+        @media(max-width: 520px) {
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width: 420px) {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    &:hover {
+        background: #6b8bff;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 2rem;
+        width: 348px;
+        padding: 7px 15px;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 5px 11px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.4rem;
+        padding: 3px 7px;
+    }
+}
+
+.donateFormFieldName {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #505050;
+
+    @media(max-width: 650px) {
+        font-size: 1.9rem;
+    }
+
+    @media(max-width: 650px) {
+        font-size: 1.5rem;
+    }
+}
+
+.donateFormFieldItem {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px;
+    color: #7D97F3;
+
+    @media (max-width: 650px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.5rem;
+    }
+}
+
+.formFields {
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 650px) {
+            width: 100%;
+        }
+    }
+}
+
+.line {
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    margin: 20px 0 20px 0;
+    width: 100%;
+
+    @media (max-width: 650px) {
+        margin: 15px 0 15px 0;
+    }
+
+    @media (max-width: 520px) {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.donateFormServerField {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px;
+    color: #7D97F3;
+    appearance: unset;
+    text-align: right;
+
+    @media (max-width: 650px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.5rem;
+    }
+}

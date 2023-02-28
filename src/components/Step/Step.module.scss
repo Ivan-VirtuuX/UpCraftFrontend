@@ -1,0 +1,142 @@
+.stepHead {
+    display: flex;
+    align-items: center;
+
+    span {
+        width: 91px;
+        height: 91px;
+        display: flex;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 39px;
+        color: #FFFFFF;
+
+        @media (max-width: 600px) {
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 450px) {
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.title {
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    color: #EB6363;
+
+    @media (max-width: 600px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.7rem;
+    }
+}
+
+.stepBlock {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        padding: 10px 15px;
+        font-weight: 900;
+        font-size: 16px;
+        color: #FFFFFF;
+        border-radius: 10px;
+
+        &:disabled {
+            background-color: #D4D4D4 !important;
+            pointer-events: none;
+            color: #929292 !important;
+            font-weight: 700;
+        }
+    }
+
+    img {
+        width: 415px;
+        height: 233px;
+    }
+}
+
+.text {
+    width: 100%;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 50px;
+    color: #505050;
+
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+}
+
+.orButton {
+    font-weight: 900;
+    font-size: 16px;
+    color: #EB6363;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        button {
+
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.description {
+    margin-left: 111px;
+
+    @media (max-width: 600px) {
+        margin-left: 80px;
+    }
+
+    @media (max-width: 600px) {
+        margin-left: 60px;
+    }
+}
+
+.line {
+    margin-top: 50px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+}
+
+.primaryActionsButton,
+.secondaryActionsButton,
+.tertiaryActionsButton {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        filter: saturate(150%);
+        transform: translateY(-10px);
+    }
+}

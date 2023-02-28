@@ -1,0 +1,50 @@
+.answerHeading {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    @media (max-width: 520px) {
+        align-items: center;
+    }
+
+    div {
+        svg {
+            margin-top: 5px;
+        }
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+        color: #7D97F3;
+        margin-left: 20px;
+
+        @media (max-width: 1500px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 520px) {
+            font-size: 2.3rem;
+            line-height: 38px;
+        }
+    }
+}
+
+.answerText {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #505050;
+    margin-left: 65px;
+
+    @media (max-width: 1500px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.7rem;
+        line-height: 38px;
+        margin-left: 0;
+    }
+}

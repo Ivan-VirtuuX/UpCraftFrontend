@@ -1,0 +1,35 @@
+.pageArticleTitle {
+    font-weight: 800;
+    font-size: 64px;
+    color: #7D97F3;
+    margin-bottom: 15px;
+
+    @media (max-width: 750px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 2.3rem;
+    }
+}
+
+.pageArticleText {
+    font-weight: 700;
+    font-size: 37px;
+    color: #505050;
+    line-height: 50px;
+
+    @media (max-width: 750px) {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.7rem;
+    }
+}
+
+.pageArticleBlock {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

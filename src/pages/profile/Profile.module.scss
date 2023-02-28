@@ -1,0 +1,257 @@
+.container {
+    margin: 0 auto;
+    width: 1480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 87px;
+        color: #776DEC;
+        margin-top: 50px;
+        margin-bottom: 15px;
+
+        @media (max-width: 550px) {
+            font-size: 3rem;
+            line-height: 65px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            line-height: 35px;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        padding: 0 50px 0 50px;
+        width: 100%;
+    }
+}
+
+.profileLeftSide {
+    width: 100%;
+
+    @media (max-width: 1500px) {
+        width: 100%;
+    }
+}
+
+.profileItem {
+    h3 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 61px;
+        color: #505050;
+
+        @media (max-width: 550px) {
+            font-size: 2.5rem;
+            line-height: 45px;
+        }
+    }
+
+    span,
+    button {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 55px;
+        color: #776DEC;
+        background: transparent;
+
+        @media (max-width: 550px) {
+            font-size: 2rem;
+            line-height: 35px;
+        }
+    }
+}
+
+.profileItemsLeftSide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 277px;
+    gap: 50px;
+
+    @media (max-width: 1250px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 550px) {
+        gap: 25px;
+        width: 100%;
+    }
+}
+
+.profileItems {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1500px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+.avatarSvg {
+    transition: all 0.3s ease-in-out;
+    background: #505050 !important;
+    cursor: pointer;
+
+    &:hover {
+        background: #988fff !important;
+    }
+}
+
+.changePasswordButton {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #988fff;
+    }
+}
+
+.submitForm {
+    transition: all 0.3s ease-in-out;
+    font-size: 30px !important;
+    margin-left: 40px;
+
+    @media (max-width: 550px) {
+        margin-left: 0;
+        margin-top: 20px;
+
+        &:nth-child(1) {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        margin-right: 0 !important;
+    }
+
+    &:hover {
+        color: #988fff;
+    }
+}
+
+.passwordFieldBlock {
+    display: flex;
+    width: 450px;
+
+    @media (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+        width: 200px !important;
+
+        div:not(:last-child) {
+            width: 250px !important;
+        };
+    }
+}
+
+.avatar {
+    width: 277px;
+    height: 277px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+.changeAvatarBlock {
+    border-radius: 50%;
+
+    @media (max-width: 1500px) {
+        margin-bottom: 30px;
+    }
+}
+
+.saveAvatarButton {
+    background: transparent;
+    color: #776DEC;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 55px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+        color: #988fff;
+    }
+}
+
+.avatarOverlay {
+    width: 277px;
+    height: 277px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    top: 0;
+    font-weight: 700;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.avatarBlockWrapper {
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 400px) {
+        width: 277px;
+    }
+}
+
+.closeImage {
+    position: absolute;
+    right: 0;
+
+    path {
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            fill: #776DEC;
+        }
+    }
+}
+
+.changeAvatarBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email {
+    word-break: break-all;
+}
+
+.passwordFieldActionsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 550px) {
+        flex-direction: row;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

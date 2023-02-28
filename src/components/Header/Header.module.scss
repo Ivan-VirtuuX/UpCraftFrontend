@@ -1,0 +1,353 @@
+.projectName {
+    font-weight: 900;
+    font-size: 26px;
+    color: #7D97F3;
+}
+
+.slogan {
+    font-weight: 600;
+    font-size: 14px;
+    color: #7D97F3;
+}
+
+.logoRightSide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 153px;
+}
+
+.headerContent {
+    width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1500px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+    }
+}
+
+.headerContainer {
+    height: 75px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px -3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.headerLinks {
+    width: 456px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li a {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            color: #505050;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        svg {
+            path {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #7D97F3;
+                }
+            }
+
+            span {
+                color: #7D97F3;
+            }
+        }
+    }
+}
+
+.userActions {
+    display: flex;
+}
+
+.loginButton {
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    background: transparent;
+    color: #505050;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #7D97F3;
+    }
+}
+
+.startPlayButton {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #7D97F3;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    width: 165.63px;
+
+    &:hover {
+        background: #6789FF;
+    }
+}
+
+.serversList {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    width: 231px;
+    height: 192px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.serversListContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.serversFirstList li:nth-child(1),
+.serversSecondList li:nth-child(1) {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7D97F3;
+}
+
+.serversFirstList li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.serversFirstList li:nth-child(1),
+.serversSecondList li:nth-child(1) {
+    pointer-events: none;
+}
+
+.serversFirstList li,
+.serversSecondList li {
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    width: 120px;
+
+    a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #505050;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateX(10px);
+
+        a {
+            color: #7D97F3;
+        }
+    }
+}
+
+.serversListOverlay {
+    height: 100px;
+    position: absolute;
+    width: 231px;
+    top: -20px;
+    background: transparent;
+}
+
+.serversListWrapper {
+    position: absolute;
+    width: 231px;
+    background: transparent;
+}
+
+.helpList {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    width: 178px;
+    height: 148px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+    a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #505050;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        li {
+            a {
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                a {
+                    color: #7D97F3;
+                }
+            }
+        }
+    }
+}
+
+.helpListContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.helpListOverlay {
+    height: 75px;
+    position: absolute;
+    width: 178px;
+    top: -10px;
+    background: transparent;
+}
+
+.line {
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.helpListWrapper {
+    position: absolute;
+    width: 178px;
+    background: transparent;
+}
+
+.bgOverlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+}
+
+.logoutButton {
+    margin-left: 10px;
+    cursor: pointer;
+
+    path {
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            stroke: #7D97F3;
+        }
+    }
+
+}
+
+.userData {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    div {
+        transition: background 0.3s ease-in-out;
+    }
+
+    &:hover {
+        div {
+            background: #7D97F3;
+        }
+
+        span {
+            color: #7D97F3;
+        }
+    }
+
+    div {
+        margin-right: 10px;
+
+        svg {
+            path {
+                fill: white;
+            }
+        }
+
+        @media (max-width: 550px) {
+            margin-right: 0;
+        }
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #505050;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.profile {
+    display: flex;
+}
+
+.burgerMenu {
+    path {
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            stroke: #7D97F3;
+        }
+    }
+}
+
+.burgerMenuContainer {
+    width: 25px;
+    height: 20px;
+    margin-left: 20px;
+
+    @media (max-width: 550px) {
+        margin-left: 10px;
+    }
+}

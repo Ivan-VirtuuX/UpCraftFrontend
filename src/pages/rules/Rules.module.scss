@@ -1,0 +1,66 @@
+.container {
+    margin: 0 auto;
+    width: 1480px;
+
+    div {
+        div {
+            div {
+                margin-top: 20px;
+
+                @media (max-width: 750px) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    div :last-child {
+        hr {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        padding: 0 50px 50px 50px;
+        width: 100%;
+    }
+}
+
+.commonRulesHeading {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 68px;
+    color: #EB6363;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+    @media (max-width: 750px) {
+        font-size: 2.7rem;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 2rem;
+    }
+}
+
+.gameRulesHeading {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 68px;
+    color: #8E63EB;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+    @media (max-width: 750px) {
+        font-size: 2.7rem;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 2rem;
+    }
+}

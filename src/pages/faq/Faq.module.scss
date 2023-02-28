@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    width: 1480px;
+
+    @media (max-width: 1500px) {
+        width: 100%;
+        padding: 0 50px 50px 50px;
+    }
+}
+
+.answers {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media (max-width: 1500px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
